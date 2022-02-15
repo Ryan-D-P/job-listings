@@ -1,0 +1,142 @@
+.JobListing {
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 1px hsl(0, 0%, 25%);
+}
+
+.job-wrapper {
+    padding: 2rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+    .job-wrapper {
+        padding: 3rem;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 200px;
+    }
+}
+
+.job-wrapper__column {
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.job-wrapper__column + .job-wrapper__column  {
+    border-top: 1px solid hsl(0, 0%, 0%);
+    padding-top: 1rem;
+    padding-right: 0rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .job-wrapper__column {
+        padding-right: 0rem;
+        gap: 20px;
+    }
+
+    .job-wrapper__column + .job-wrapper__column  {
+        border-top: none;
+        padding-top: 0rem;
+    }
+}
+
+.job-logo {
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-logo > img {
+    width: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+    .job-logo {
+        position: static;
+    }
+
+    .job-logo > img {
+        width: 100px;
+    }
+}
+
+.job-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-company {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.job-company > div > p {
+    color: var(--light-blue);
+    font-weight: 700;
+}
+
+.job-listing-types {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.job-listing-type {
+    background-color: hsl(175, 100%, 30%);
+    color: hsl(0, 0%, 100%);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+
+.job-role > h2 {
+    font-weight: 700;
+    text-align: left;
+}
+
+.job-details {
+    color: hsl(0, 0%, 40%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-details p {
+    position: relative;
+}
+
+.job-details > div + div > p::before {
+    content: "";
+    background-color: hsl(0, 0%, 40%);
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.job-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-tag {
+    background-color: var(--light-blue-faded);
+    color: var(--light-blue);
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
