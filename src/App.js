@@ -1,7 +1,8 @@
 import logo from './logo.svg';
-import JobListings from './JobListings';
 import JSONdata from "./data.json";
 import { useState } from 'react';
+import FilterMenu from './FilterMenu';
+import JobListings from './JobListings';
 
 function App() {
   // State to manage the job listings data
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <header className="header-background"></header>
       <main className="main-content">
+        <FilterMenu />
         <JobListings data={ data } />
       </main>
     </div>
