@@ -9,9 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="header-background">
-        <h1>Header background</h1>
-      </header>
+      <header className="header-background"></header>
       <main className="main-content">
         <JobListings data={ data } />
       </main>

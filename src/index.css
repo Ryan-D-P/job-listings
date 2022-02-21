@@ -8,6 +8,7 @@
   --bluish-white: hsl(180, 20%, 90%);
   --light-blue: hsl(180, 50%, 50%);
   --light-blue-faded: hsl(180, 50%, 95%);
+  --blue: hsl(180, 100%, 30%);
   --dark-blue: hsl(180, 95%, 8%);
 }
 
@@ -49,8 +50,19 @@ img {
 }
 
 .header-background {
-  background-color: var(--light-blue);
   min-height: 100px;
+  background-color: var(--blue);
+  background-image: url(./images/bg-header-mobile.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1000px) {
+  .header-background {
+    min-height: 300px;
+    background-image: url(./images/bg-header-desktop.svg);
+  }
 }
 
 .main-content {
