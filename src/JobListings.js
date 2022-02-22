@@ -1,6 +1,6 @@
 import JobListing from "./JobListing";
 
-const JobListings = ({ listingsData, data, setData, filterList, setFilterList }) => {
+const JobListings = ({ data, filterList, setFilterList }) => {
     // Add a tag to the filter list
     const addFilter = (tag) => {
         if (!filterList.includes(tag)) setFilterList([...filterList, tag]);
