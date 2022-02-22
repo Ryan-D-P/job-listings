@@ -1,5 +1,6 @@
 {
   "name": "job-listings",
+  "homepage": "https://ryan-d-p.github.io/job-listings/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
