@@ -1,7 +1,10 @@
 import "./FilterMenu.css";
 import removeIcon from "./images/icon-remove.svg";
 
-const FilterMenu = ({ filterList }) => {
+const FilterMenu = ({ filterList, setFilterList }) => {
+    // Clear all tags from the filter list
+    const clearFilterList = () => setFilterList([]);
+
     return (
         <div className="FilterMenu">
             <div className="flex-container">
@@ -20,8 +23,8 @@ const FilterMenu = ({ filterList }) => {
                 }
             </div>
             <div className="flex-container">
-                <div className="clear-container">
-                    <p>Clear</p>
+                <div className="clear-container" onClick={ () => clearFilterList() }>
+                    <p onClick={ () => clearFilterList() }>Clear</p>
                 </div>
             </div>
         </div>
