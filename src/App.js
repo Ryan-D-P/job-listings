@@ -8,12 +8,15 @@ function App() {
   // State to manage the job listings data
   const [data, setData] = useState(JSONdata);
 
+  // State to manage the list selected filters
+  const [filterList, setFilterList] = useState([]);
+
   return (
     <div className="App">
       <header className="header-background"></header>
       <main className="main-content">
-        <FilterMenu />
-        <JobListings data={ data } />
+        { filterList.length > 0 ? <FilterMenu filterList={ filterList } /> : null }
+        <JobListings data={ data } filterList={ filterList } setFilterList={ setFilterList } />
       </main>
     </div>
   );

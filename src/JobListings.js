@@ -1,6 +1,11 @@
 import JobListing from "./JobListing";
 
-const JobListings = ({ data }) => {
+const JobListings = ({ data, filterList, setFilterList }) => {
+    // Add a tag to the filter list
+    const addFilter = (tag) => {
+        if (!filterList.includes(tag)) setFilterList([...filterList, tag]);
+    };
+
     return (
         <div className="JobListings">
             {
@@ -20,6 +25,7 @@ const JobListings = ({ data }) => {
                             location={ listing.location }
                             languages={ listing.languages }
                             tools={ listing.tools }
+                            addFilter={ addFilter }
                         />
                     </div>
                 ))
