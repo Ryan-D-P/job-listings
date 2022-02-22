@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <header className="header-background"></header>
       <main className="main-content">
-        { filterList.length > 0 ? <FilterMenu filterList={ filterList } setFilterList={ setFilterList } /> : null }
+        <FilterMenu filterList={ filterList } setFilterList={ setFilterList } />
         <JobListings data={ data } filterList={ filterList } setFilterList={ setFilterList } />
       </main>
     </div>

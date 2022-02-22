@@ -5,6 +5,9 @@ const FilterMenu = ({ filterList, setFilterList }) => {
     // Clear all tags from the filter list
     const clearFilterList = () => setFilterList([]);
 
+    // Do not display FilterMenu if filterList is empty
+    if (!filterList.length) return null;
+
     return (
         <div className="FilterMenu">
             <div className="flex-container">
