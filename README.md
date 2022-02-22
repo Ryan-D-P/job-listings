@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [link](link)
+- Solution URL: [https://www.frontendmentor.io/solutions/job-listings-landing-page-with-tag-filtering-using-react-lTlp2suiB](https://www.frontendmentor.io/solutions/job-listings-landing-page-with-tag-filtering-using-react-lTlp2suiB)
 - Live Site URL: [https://ryan-d-p.github.io/job-listings/](https://ryan-d-p.github.io/job-listings/)
 
 ## My process
