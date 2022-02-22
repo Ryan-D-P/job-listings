@@ -1,7 +1,6 @@
 import "./JobListing.css";
 
 const JobListing = ( {
-                        id,
                         company,
                         logo,
                         isNew,
@@ -14,7 +13,14 @@ const JobListing = ( {
                         location,
                         languages,
                         tools,
+                        filterList,
+                        addFilter
                 } ) => {
+
+    // If current job listing matches any current filter tags: return null
+    const filters = [role, level, ...languages, ...tools];
+    if (filterList.some(tag => filters.includes(tag))) return null;
+
     return (
         <div className="JobListing">
             <div className="job-wrapper">
@@ -62,16 +68,16 @@ const JobListing = ( {
                 </div>
                 <div className="job-wrapper__column">
                     <div className="job-tags">
-                        <div className="job-tag">
-                            <p>{ role }</p>
+                        <div className="job-tag" onClick={ () => addFilter(role) }>
+                            <p onClick={ () => addFilter(role) }>{ role }</p>
                         </div>
-                        <div className="job-tag">
-                            <p>{ level }</p>
+                        <div className="job-tag" onClick={ () => addFilter(level) }>
+                            <p onClick={ () => addFilter(level) }>{ level }</p>
                         </div>
                         {
                             [...languages, ...tools].map((tag, idx) => (
-                                <div className="job-tag" key={ idx }>
-                                    <p>{ tag }</p>
+                                <div className="job-tag" key={ idx } onClick={ () => addFilter(tag) }>
+                                    <p onClick={ () => addFilter(tag) }>{ tag }</p>
                                 </div>
                             ))
                         }
