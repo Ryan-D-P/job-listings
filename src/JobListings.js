@@ -3,7 +3,9 @@ import JobListing from "./JobListing";
 const JobListings = ({ data, filterList, setFilterList }) => {
     // Add a tag to the filter list
     const addFilter = (tag) => {
-        if (!filterList.includes(tag)) setFilterList([...filterList, tag]);
+        if (filterList.includes(tag)) return;
+        localStorage.setItem(`filterList`, JSON.stringify([...filterList, tag]));
+        setFilterList([...filterList, tag]);
     };
 
     return (

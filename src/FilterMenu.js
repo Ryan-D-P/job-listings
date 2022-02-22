@@ -3,9 +3,15 @@ import removeIcon from "./images/icon-remove.svg";
 
 const FilterMenu = ({ filterList, setFilterList }) => {
     // Clear all tags from the filter list and restore the full (unfiltered) job listings
-    const clearFilterList = () => setFilterList([]);
+    const clearFilterList = () => {
+        localStorage.setItem(`filterList`, JSON.stringify([]));
+        setFilterList([]);
+    };
     // Remove a specific tag from the FilterMenu when close icon is clicked
-    const removeTag = (filterTag) => setFilterList(filterList.filter(tag => tag !== filterTag));
+    const removeTag = (filterTag) => {
+        localStorage.setItem(`filterList`, JSON.stringify(filterList.filter(tag => tag !== filterTag)));
+        setFilterList(filterList.filter(tag => tag !== filterTag));
+    };
 
     // Do not display FilterMenu if filterList is empty
     if (!filterList.length) return null;
