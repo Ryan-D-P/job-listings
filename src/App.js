@@ -15,8 +15,8 @@ function App() {
     <div className="App">
       <header className="header-background"></header>
       <main className="main-content">
-        <FilterMenu filterList={ filterList } setFilterList={ setFilterList } />
-        <JobListings data={ data } filterList={ filterList } setFilterList={ setFilterList } />
+        <FilterMenu listingsData={ JSONdata } data={ data } setData={ setData } filterList={ filterList } setFilterList={ setFilterList } />
+        <JobListings listingsData={ JSONdata } data={ data } setData={ setData } filterList={ filterList } setFilterList={ setFilterList } />
       </main>
     </div>
   );

@@ -1,11 +1,21 @@
 import "./FilterMenu.css";
 import removeIcon from "./images/icon-remove.svg";
 
-const FilterMenu = ({ filterList, setFilterList }) => {
-    // Clear all tags from the filter list
-    const clearFilterList = () => setFilterList([]);
+const FilterMenu = ({ listingsData, data, setData, filterList, setFilterList }) => {
+    // const getJobListings = () => {
+    //     setData(data.filter(listing => listing.languages.includes()))
+    // };
+    
+    // Clear all tags from the filter list and restore the full (unfiltered) job listings
+    const clearFilterList = () => {
+        setFilterList([]);
+        // setData(listingsData);
+    };
     // Remove a specific tag from the FilterMenu when close icon is clicked
-    const removeTag = (filterTag) => setFilterList(filterList.filter(tag => tag !== filterTag));
+    const removeTag = (filterTag) => {
+        setFilterList(filterList.filter(tag => tag !== filterTag));
+        // getJobListings();
+    };
 
     // Do not display FilterMenu if filterList is empty
     if (!filterList.length) return null;
