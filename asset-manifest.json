@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2317f05f.css",
+    "main.js": "/static/js/main.e3dc1bec.js",
+    "static/media/desktop-design.jpg": "/static/media/desktop-design.d7fe2154616aa62fc445.jpg",
+    "static/media/mobile-design.jpg": "/static/media/mobile-design.53a85d8cb1966bbfc5f5.jpg",
+    "static/media/desktop-preview.jpg": "/static/media/desktop-preview.f59408bda9e20932fa8a.jpg",
+    "static/media/active-states.jpg": "/static/media/active-states.75b30daba05944264358.jpg",
+    "static/media/mobile-with-filters.jpg": "/static/media/mobile-with-filters.2ac649e8bd1b1a0e15b5.jpg",
+    "static/media/loop-studios.svg": "/static/media/loop-studios.7778c957c5751d1502cc.svg",
+    "static/media/photosnap.svg": "/static/media/photosnap.5a867c13a374d62b400f.svg",
+    "static/media/manage.svg": "/static/media/manage.5a528a9669728fb94c8c.svg",
+    "static/media/insure.svg": "/static/media/insure.4d535e7e02c25d02b163.svg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/account.svg": "/static/media/account.903d6cd02abadf4b4d60.svg",
+    "static/media/eyecam-co.svg": "/static/media/eyecam-co.0abb14e8a292eed471d5.svg",
+    "static/media/shortly.svg": "/static/media/shortly.3c01b577742e2648f6f9.svg",
+    "static/media/myhome.svg": "/static/media/myhome.aaaaa430346f24f652d5.svg",
+    "static/media/the-air-filter-company.svg": "/static/media/the-air-filter-company.9b55f6443c39f7b79348.svg",
+    "static/media/faceit.svg": "/static/media/faceit.54a148ce9e8793ff767e.svg",
+    "static/media/bg-header-desktop.svg": "/static/media/bg-header-desktop.8694f4668c94cdc9d16e.svg",
+    "index.html": "/index.html",
+    "static/media/bg-header-mobile.svg": "/static/media/bg-header-mobile.9cb13612af1317a665a2.svg",
+    "static/media/icon-remove.svg": "/static/media/icon-remove.70c075ce001e5ccae7c68a570c4b7bc0.svg",
+    "main.2317f05f.css.map": "/static/css/main.2317f05f.css.map",
+    "main.e3dc1bec.js.map": "/static/js/main.e3dc1bec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2317f05f.css",
+    "static/js/main.e3dc1bec.js"
+  ]
+}
