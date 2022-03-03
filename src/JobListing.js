@@ -19,7 +19,8 @@ const JobListing = ( {
 
     // If current job listing matches any current filter tags: return null
     const filters = [role, level, ...languages, ...tools];
-    if (filterList.some(tag => filters.includes(tag))) return null;
+    // If not all tags in filterList is included in a JobListing: return null
+    if (!filterList.every(tag => filters.includes(tag))) return null;
 
     return (
         <div className="JobListing">
